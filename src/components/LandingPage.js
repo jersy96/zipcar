@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/main.css';
 import Mockup from '../images/mockup.png';
+import { Link } from 'react-router-dom';
 
 function LandingPage() {
   return (
@@ -44,7 +45,7 @@ function LandingPage() {
           <p class="lead">
             Totally free, only pay when the service is used.
           </p>
-          <a href="ZipCar-Login\index.html" class="btn btn-primary">Start now</a>
+          <Link to="login" className="btn btn-primary">Start now</Link>
           <img src={Mockup} alt="abc"/>
         </div>
       </section>
